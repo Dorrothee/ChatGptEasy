@@ -12,22 +12,23 @@ Use Hibernate to persist the items in the database.
    ```sh
    git clone https://github.com/your-username/repository-name.git
 2. Install MySQL (if not installed). Create a database, a user and grant them privileges:
-3. ```sh
+3. Configure the database:
+   ```sh
    CREATE DATABASE new_database;
    CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';
    GRANT CREATE, SELECT, INSERT, UPDATE, DELETE ON new_database.* TO 'new_user'@'localhost';
    FLUSH PRIVILEGES;
-Set free port to serve the server.
-4. Install Postman (if not installed). Create a new collection. Create 5 new requests:
+4. Change application properties according to the data in the step 3. Set free port for the server.
+5. Install Postman (if not installed). Create a new collection. Create 5 new requests:
 - GET to get all the todos
 - GET to get a specific todo
 - POST to add a new todo
 - PUT to be able to update a specific todo
 - DELETE to delete a specific todo
-5. Run the TodoApplication.
-6. Open Postman and send different requests.
-7. Stop the TodoApplication.
-8. [Optional] Check the correctness of the program either by visiting the page of the server or
+6. Run the TodoApplication.
+7. Open Postman and send different requests.
+8. Stop the TodoApplication.
+9. [Optional] Check the correctness of the program either by visiting the page of the server or
    exploring the created database.
 
 > **Feedback**
