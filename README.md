@@ -15,8 +15,9 @@ Use Hibernate to persist the items in the database.
 3. ```sh
    CREATE DATABASE new_database;
    CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';
-   GRANT CREATE, SELECT, INSERT, UPDATE, DELETE ON new_database.* TO 'new_user'@'localhost' IDENTIFIED BY 'new_password';
+   GRANT CREATE, SELECT, INSERT, UPDATE, DELETE ON new_database.* TO 'new_user'@'localhost';
    FLUSH PRIVILEGES;
+Set free port to serve the server.
 4. Install Postman (if not installed). Create a new collection. Create 5 new requests:
 - GET to get all the todos
 - GET to get a specific todo
@@ -26,17 +27,19 @@ Use Hibernate to persist the items in the database.
 5. Run the TodoApplication.
 6. Open Postman and send different requests.
 7. Stop the TodoApplication.
+8. [Optional] Check the correctness of the program either by visiting the page of the server or
+   exploring the created database.
 
-> **Feedback**  
+> **Feedback**
 > - Was it easy to complete the task using AI?
-> Yes, it was easy to complete this task using AI.
+    > Yes, it was easy to complete this task using AI.
 > - How long did task take you to complete? (Please be honest, we need it to gather anonymized statistics)
-> About an hour and a half.
+    > About an hour and a half.
 > - Was the code ready to run after generation? What did you have to change to make it usable?
-> No, it was not ready to run after generation. Some pieces of code were incomplete. I had either to ask AI to provide me with more detailed code or adjust 
-> the code in the IntelliJ using its hints.
+    > No, it was not ready to run after generation. Some pieces of code were incomplete. I had either to ask AI to provide me with more detailed code or adjust
+    > the code in the IntelliJ using its hints.
 > - Which challenges did you face during completion of the task?
-> Generally, there were not so many challenges I faced during completion of the task. One confusing challenge was to determine dependencies with their versions
-> and configuration properties.
+    > Generally, there were not so many challenges I faced during completion of the task. One confusing challenge was to determine dependencies with their versions
+    > and configuration properties.
 > - Which specific prompts you learned as a good practice to complete the task?
-> A good practice to complete the task is to provide a detailed prompt with the task description, working environment and required tools to complete the task.
+    > A good practice to complete the task is to provide a detailed prompt with the task description, working environment and required tools to complete the task.
